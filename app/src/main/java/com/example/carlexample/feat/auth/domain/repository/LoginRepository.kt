@@ -4,5 +4,5 @@ import com.example.carlexample.core.common.Result
 import com.example.carlexample.feat.auth.domain.entity.UserEntity
 
 interface LoginRepository {
-    fun makeLoginRequest(jsonBody: String): Result<UserEntity>
+   suspend fun makeLoginRequest(jsonBody: String): Result<UserEntity>
 }
